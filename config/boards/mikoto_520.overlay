@@ -16,7 +16,7 @@
 		spi-max-frequency = <4000000>;
 
 		/* WS2812 */
-		chain-length = <6>; /* There are per-key RGB, but the first 6 are underglow */
+		chain-length = <12>; /* There are per-key RGB, but the first 6 are underglow */
 		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
 	};
@@ -25,13 +25,6 @@
 / {
 	chosen {
 		zmk,underglow = &led_strip;
-	};
-
-	ext-power {
-		compatible = "zmk,ext-power-generic";
-		label = "EXT_POWER";
-		control-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
-		init-delay-ms = <50>;
 	};
 
 };
