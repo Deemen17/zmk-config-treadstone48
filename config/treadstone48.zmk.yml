@@ -1,0 +1,11 @@
+file_format: "1"
+id: treadstone48
+name: Treadstone48
+type: shield
+url: https://github.com/marksard/Keyboards/tree/master/treadstone48
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - underglow
+  - display
